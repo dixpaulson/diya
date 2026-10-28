@@ -50,6 +50,9 @@ const _chapterIntros = <int, String>{
   5: 'Chapter 5, Karma Sanyasa Yoga, reconciles two paths. Arjuna asks whether it is better to renounce action or to act; Krishna answers that both lead to freedom, but selfless action is the easier road. The truly free person acts without attachment, offering everything to the divine, and stays unstained like a lotus leaf on water.',
   6: 'Chapter 6, Dhyana Yoga, is the Gita’s guide to meditation. Krishna describes how to sit, steady the breath, and still the mind — like a lamp that does not flicker in a windless place. When Arjuna protests that the mind is as restless as the wind, Krishna reassures him: with steady practice and non-attachment, even the mind can be tamed, and no sincere effort is ever wasted.',
   7: 'Chapter 7, Jnana Vijnana Yoga, turns to knowing the divine directly. Krishna reveals his lower nature — the elements, mind, and ego — and his higher nature, the life that sustains all, declaring that everything is strung upon him like beads on a thread: the taste in water, the light in the sun, the life in all beings. He names four kinds of seekers and calls the wise lover of God the dearest of all.',
+  8: 'Chapter 8, Akshara Brahma Yoga, is about the Imperishable and the moment of death. Arjuna asks Krishna to explain Brahman, the Self, action, and how the Lord is known at life’s end. Krishna teaches that whatever we remember as we leave the body, we become — so remember Him always, and act. He describes the vast days and nights of Brahma in which worlds arise and dissolve, and the two paths of light and smoke by which souls depart.',
+  9: 'Chapter 9, Raja Vidya Raja Guhya Yoga, is the royal knowledge and the royal secret. Krishna reveals that the whole universe rests in him as the wind rests in space, yet he remains untouched. He is the father, mother, friend, and refuge of all. He asks nothing grand: a leaf, a flower, a fruit, or a little water offered with love is enough. Whoever turns to him, whatever their past or birth, is never lost.',
+  10: 'Chapter 10, Vibhuti Yoga, unveils the divine glories. Krishna declares himself the source of all, from whom every quality — wisdom, patience, fear, and fearlessness — arises. When Arjuna asks how to recognize him, Krishna names his chief manifestations: the sun among lights, Om among words, the Ganga among rivers, the Himalaya among mountains. Wherever there is greatness or beauty, it is a spark of his splendor — and a single fragment of him holds up the entire universe.',
 };
 
 // The Vidya tab: sacred texts and (later) stories.
@@ -149,7 +152,7 @@ class GitaChaptersScreen extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: _maroon)),
           const SizedBox(height: 6),
           const Text(
-              '701 verses across 18 chapters. Every verse is here in Sanskrit with transliteration; English is being added chapter by chapter (Chapters 1–4 so far).',
+              '701 verses across 18 chapters. Every verse is here in Sanskrit with transliteration; English is being added chapter by chapter (Chapters 1–10 so far).',
               style: TextStyle(color: Colors.black54, height: 1.4)),
           const SizedBox(height: 16),
           for (final c in gitaChapters)
