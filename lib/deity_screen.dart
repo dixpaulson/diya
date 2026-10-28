@@ -71,11 +71,16 @@ class DeityCircle extends StatelessWidget {
         children: [
           deityAvatar(deity, radius: 30),
           const SizedBox(height: 6),
+          // One line, shrunk if needed (long name or large phone text), so it
+          // never spills out of the fixed-height deity row on Home.
           SizedBox(
             width: 72,
-            child: Text(deity.name,
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 12, color: _maroon, fontWeight: FontWeight.w500)),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(deity.name,
+                  maxLines: 1,
+                  style: const TextStyle(fontSize: 12, color: _maroon, fontWeight: FontWeight.w500)),
+            ),
           ),
         ],
       ),

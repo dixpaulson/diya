@@ -150,20 +150,22 @@ class HomeTab extends StatelessWidget {
               children: [
                 const Icon(Icons.local_fire_department, color: _saffron, size: 34),
                 const SizedBox(width: 14),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ValueListenableBuilder<int>(
-                      valueListenable: streakCount,
-                      builder: (context, count, _) => Text(
-                        '$count day${count == 1 ? '' : 's'} streak',
-                        style: const TextStyle(
-                            color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ValueListenableBuilder<int>(
+                        valueListenable: streakCount,
+                        builder: (context, count, _) => Text(
+                          '$count day${count == 1 ? '' : 's'} streak',
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
-                    const Text('Keep the light burning',
-                        style: TextStyle(color: Colors.white70, fontSize: 13)),
-                  ],
+                      const Text('Keep the light burning',
+                          style: TextStyle(color: Colors.white70, fontSize: 13)),
+                    ],
+                  ),
                 ),
               ],
             ),
