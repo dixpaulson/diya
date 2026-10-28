@@ -21,6 +21,9 @@ List<DailyItem> _buildPool() {
   final pool = <DailyItem>[];
   for (final v in gitaVerses) {
     if (v.meaning.isEmpty) continue;
+    // Skip verses that are only part of a sentence running across verses
+    // (their short line starts or ends with a dash); they don't stand alone.
+    if (v.inShort.startsWith('—') || v.inShort.endsWith('—')) continue;
     pool.add(DailyItem(
       native: v.sanskrit,
       transliteration: v.transliteration,
